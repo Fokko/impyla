@@ -24,12 +24,9 @@ def readme():
     with open('README.md', 'r') as ip:
         return ip.read()
 
-import versioneer  # noqa
-
 setup(
     name='impyla',
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    version='0.14.2',
     description='Python client for the Impala distributed query engine',
     long_description=readme(),
     maintainer='Wes McKinney',
